@@ -1,0 +1,12 @@
+<!--  DEBUT Mojito -->
+
+include ../blocks/_header
+include ../blocks/_mojito
+.container
+    +header('Menu Mojito')
+    .row.justify-content-center
+        - var items = [{'title': 'Bubble Mango Mojito', 'price': '26dh'}, {'title': 'Virgin Classique', 'price': '26dh'}, {'title': 'Bubble Strawberry Mojito', 'price': '30dh'}, {'title': 'Bubble Gum Mojito', 'price': '30dh'}, {'title': 'Bubble Passion Mojito', 'price': '35dh'}]
+        each item in items
+            +mojito(item.title, item.price)
+
+<!--  FIN Mojito -->

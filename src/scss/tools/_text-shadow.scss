@@ -1,0 +1,11 @@
+@mixin text-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-text-shadow:inset $top $left $blur $color;
+    -moz-text-shadow:inset $top $left $blur $color;
+    text-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-text-shadow: $top $left $blur $color;
+    -moz-text-shadow: $top $left $blur $color;
+    text-shadow: $top $left $blur $color;
+  }
+}

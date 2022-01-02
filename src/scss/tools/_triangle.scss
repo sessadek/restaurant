@@ -1,0 +1,21 @@
+@mixin arrow($width, $height, $color, $dir: false) {
+  width: 0;
+  height: 0; 
+  @if ($dir == top) {
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $height solid $color;
+  } @else if($dir == bottom) {
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $height solid $color;
+  } @else if($dir == left) {
+    border-top: $height solid transparent;
+    border-bottom: $height solid transparent; 
+    border-right: $width solid $color; 
+  } @else {
+    border-top: $height solid transparent;
+    border-bottom: $height solid transparent; 
+    border-left: $width solid $color; 
+  }
+}

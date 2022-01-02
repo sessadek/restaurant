@@ -1,0 +1,17 @@
+#cookie-bar {background:$blue; height:auto; line-height:24px; color:#eeeeee; text-align:center; padding:10px 15px;}
+#cookie-bar.fixed {position:fixed; top:0; left:0; width:100%; z-index: 1200}
+#cookie-bar.fixed.bottom {bottom:0; top:auto;}
+#cookie-bar p {margin:0; padding:0; line-height: 1.2; max-width: 1140px; margin: 0 auto;}
+#cookie-bar a {color:#ffffff; display:inline-block;text-decoration:none;}
+
+#cookie-bar [class*="cb-"] {
+	background: $blue;
+	border: 1px solid $white;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	padding:5px 10px; margin-left:8px;margin-top: 8px;
+	&:hover {
+		background-color: $white;
+		color: $blue;
+	}
+}

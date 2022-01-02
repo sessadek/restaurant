@@ -1,0 +1,137 @@
+%icon {
+	display: inline-block;
+	background-image: url("#{$image}sprite.png");
+}
+
+.sprite--arrow-up--hover{
+  @extend %icon;
+  background-position: -23px -121px;
+  width: 18px;
+  height: 22px;
+}
+.sprite--arrow-up--orange{
+  @extend %icon;
+  background-position: 0px -121px;
+  width: 18px;
+  height: 22px;
+}
+.sprite--arrow-up{
+  @extend %icon;
+  background-position: -94px -88px;
+  width: 18px;
+  height: 22px;
+}
+.sprite--close-pop{
+  @extend %icon;
+  background-position: -138px -62px;
+  width: 20px;
+  height: 20px;
+}
+.sprite--close{
+  @extend %icon;
+  background-position: -138px -87px;
+  width: 20px;
+  height: 20px;
+}
+.sprite--go-top{
+  @extend %icon;
+  background-position: -138px 0px;
+  width: 23px;
+  height: 26px;
+}
+.sprite--icon-documents{
+  @extend %icon;
+  background-position: -138px -31px;
+  width: 22px;
+  height: 26px;
+}
+.sprite--icon-file--checker{
+  @extend %icon;
+  background-position: -31px -88px;
+  width: 29px;
+  height: 24px;
+}
+.sprite--next-img{
+  @extend %icon;
+  background-position: 0px -44px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--next-s-h-img{
+  @extend %icon;
+  background-position: -26px -44px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--next-s-img{
+  @extend %icon;
+  background-position: 0px 0px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--pdf--hover{
+  @extend %icon;
+  background-position: 0px -88px;
+  width: 26px;
+  height: 28px;
+}
+.sprite--pdf{
+  @extend %icon;
+  background-position: -104px -31px;
+  width: 26px;
+  height: 28px;
+}
+.sprite--phone--ring{
+  @extend %icon;
+  background-position: -65px -88px;
+  width: 24px;
+  height: 24px;
+}
+.sprite--prev-img{
+  @extend %icon;
+  background-position: -78px 0px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--prev-s-h-img{
+  @extend %icon;
+  background-position: -52px 0px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--prev-s-img{
+  @extend %icon;
+  background-position: -26px 0px;
+  width: 21px;
+  height: 39px;
+}
+.sprite--print--hover{
+  @extend %icon;
+  background-position: -52px -44px;
+  width: 29px;
+  height: 26px;
+}
+.sprite--print{
+  @extend %icon;
+  background-position: -104px 0px;
+  width: 29px;
+  height: 26px;
+}
+.sprite--puce-flech{
+  @extend %icon;
+  background-position: -46px -121px;
+  width: 14px;
+  height: 11px;
+}
+.sprite--select-arrow-down-r{
+  @extend %icon;
+  background-position: -104px -64px;
+  width: 26px;
+  height: 10px;
+}
+.sprite--select-arrow-down{
+  @extend %icon;
+  background-position: -117px -88px;
+  width: 16px;
+  height: 10px;
+}

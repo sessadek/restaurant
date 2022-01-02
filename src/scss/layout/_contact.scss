@@ -1,0 +1,61 @@
+.page-contact {
+    padding-bottom: 0;
+}
+.container-contact {
+    max-width: calc(1380px + 10%);
+    margin-top: rem(37);
+    margin-bottom: rem(40);
+    @include media-breakpoint-down(sm) {
+        margin-top: rem(25);
+        padding-left: rem(36);
+        padding-right: rem(36);
+        margin-bottom: rem(35);
+    }
+    h1 {
+        margin-bottom: rem(25);
+    }
+    h1, .p {
+        text-align: center;
+    }
+    .p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #00292F;
+    }
+    .s-contact {
+        margin-top: 0;
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            .btn {
+                font-size: rem(15);
+                padding-top: rem(14);
+                padding-bottom: rem(14);
+            }
+        }
+    }
+    #contact-form {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+.container-map {
+    @include media-breakpoint-down(sm) {
+        margin-left: rem(-36);
+        margin-right: rem(-36);
+        margin-top: rem(16);
+        margin-bottom: rem(25);
+    }
+    .embed-responsive-16by9::before {
+        padding-top: 70%;
+    }
+    .embed-responsive { 
+        border-radius: 0 rem(70) rem(70) rem(26);
+        @include media-breakpoint-down(sm) {
+            border-radius: 0 rem(45) rem(45) rem(26); 
+        }
+    }
+}

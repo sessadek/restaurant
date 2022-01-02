@@ -1,0 +1,15 @@
+//- DEBUT Menu
+include ../blocks/_menu-block
+section(class="section-menu" id="menu")
+    .container-section-menu
+        .header: .row: .col-3: .logo
+        .menu-block.menu-block-top
+            +menuBlock('salon-the', 'Salon de Thé')
+            +menuBlock('', 'Restaurant')
+        .menu-block.menu-block-middle
+            +menuBlock('', 'Tout')
+        .menu-block.menu-block-bottom
+            +menuBlock('', 'Petit Déjeuner')
+            +menuBlock('', 'Galerie')
+
+//- FIN Menu

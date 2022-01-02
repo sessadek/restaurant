@@ -1,0 +1,12 @@
+<!--  DEBUT Menu Mocktail -->
+
+include ../blocks/_header
+include ../blocks/_mocktail
+.container
+    +header('Menu Mocktail')
+    .row.justify-content-center
+        - var items = [{'title': 'Bora Bora', 'price': '26dh'}, {'title': 'Virgin Pinacolada', 'price': '28dh'}, {'title': 'Blue Hawaïenne', 'price': '30dh'}, {'title': 'Copacabana', 'price': '30dh'}]
+        each item in items
+            +mocktail(item.title, item.price)
+            
+<!--  FIN Menu Mocktail -->

@@ -1,0 +1,25 @@
+@mixin wrap($max-width, $gutter: 10) {
+	max-width: rem($max-width);
+	margin: 0 auto;
+	padding-left: rem(10);
+	padding-right: rem(10);
+}
+
+@mixin wrap-with-bg() {
+	max-width: rem(1160);
+	padding-left: rem(10);
+	padding-right: rem(10);
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../img/arbre-white.png),url(../img/bg-etoile-white.png);
+    background-position: -20px 50%,98% 45px;
+    background-repeat: no-repeat;
+}
+
+%container {
+	max-width: rem(1054);
+	padding-left: rem(15);
+	padding-right: rem(15);
+	margin-left: auto;
+	margin-right: auto;
+}

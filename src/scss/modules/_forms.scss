@@ -1,0 +1,31 @@
+.form-group {
+	position: relative;
+    transition: 0.3s all;
+	&.error {
+		.form-control,
+		.file-container {
+			border-color: $red;
+		}
+	}
+	&.valid {
+		.form-control,
+		.file-container {
+			border-color: $green;
+		}
+		border-color: $green;
+		background: url(../../../medias/images/checker-valid.svg) no-repeat;
+		background-position: bottom rem(14) right;
+		background-size: rem(20) rem(17);
+		padding-right: 1.875rem;
+		border-color: $green;
+	}	
+	
+}
+
+label.error {
+	color: $red;
+	font-size: rem(12);
+	position: absolute;
+	bottom: rem(-22);
+	left: 0;
+}

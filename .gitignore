@@ -1,0 +1,13 @@
+
+
+### NPM ###
+node_modules/
+
+### BOWER ###
+bower_components/
+
+### Medias ###
+# src/medias/images/*.jpg
+# src/medias/images/*.png
+# public/medias/images/*.jpg
+# public/medias/images/*.png

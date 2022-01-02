@@ -1,0 +1,265 @@
+@import "vars/global";
+@import "vars/fonts";
+@import "base/normalize";
+
+body {
+  color: #3C3C3B;
+  background: url('#{$image}bg-white.png') repeat-y center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+
+  max-width: 100%;
+  height: auto;
+}
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+  }
+  .header-title h1{
+    margin-right: 20px;
+    font-family: 'Bouquet Typeface', serif;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .header-title::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #3C3C3B;
+    flex: 1;
+  }
+
+
+  /*****Grid***/
+
+
+  .container {
+    max-width: 870px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  [class*="col"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+.section-home {
+	cursor: pointer;
+	width: 100%;
+  height: 100vh;
+  display: block;
+	  
+}
+.section-home img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+
+
+.section-menu {
+	width: 100%;
+	background: url('#{$image}bg-dark.png') no-repeat center;
+	background-size: cover;
+	position: relative;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.container-section-menu {
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-item {
+	width: 200px;
+  display: block;
+  margin: auto;
+  text-decoration: none !important;
+}
+
+.menu-item h2 {
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+  font-family: 'Poppins Thin', sans-serif;
+}
+
+.rounded {
+	border-radius: 50%;
+}
+
+.menu-block  {
+	display: flex;
+	justify-content: space-around;
+}
+.menu-block-top .menu-item{
+  margin: 0 20px;
+}
+
+.menu-block-middle .menu-item,
+.menu-block-bottom .menu-item {
+	margin-top: -75px;
+}
+
+.logo {
+	width: 115px;
+	height: 123px;
+	/* position: absolute;
+	top: 20px;
+	left: 20px; */
+  background: url('https://via.placeholder.com/115x123') no-repeat center;
+}
+
+
+/***  block jus ****/
+.block-jus {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.block-jus h2{
+  font-family: 'Calibri', sans-serif;
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.block-jus h3 {
+  font-family: 'GeosansLight', sans-serif;
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/***  block cocktail ****/
+
+.block-cocktail {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.block-cocktail h2{
+  font-family: 'Calibri', sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #006633;
+}
+
+
+.block-cocktail h3 {
+  font-family: 'GeosansLight', sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-ryden {
+  font-size: 80px;
+  line-height: 96px;
+  color: #D60B52;
+  font-family: Gabriola, sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+.block-ryden {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.block-ryden h2 {
+  font-family: 'Calibri', sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #E6007E;
+}
+
+
+.block-ryden h3 {
+  font-family: 'GeosansLight', sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.color-brown {
+  color: #683C11 !important;
+}
+
+
+.color-blue {
+  color: #2D2E83 !important;
+}
+
+.colo-gray-dark {
+  color: #3C3C3B !important;
+}

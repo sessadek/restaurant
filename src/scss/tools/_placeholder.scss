@@ -1,0 +1,28 @@
+// ========================================= //
+// placeholder
+// ========================================= //
+
+// Change placeholder color
+// Internet Explorer 10+ (!)
+@mixin placeholder-color($color, $font-size: 14px) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color:$color;
+    font-weight: normal;
+    font-size: $font-size;
+    transition:0.3s ease;
+    font-family: $fontBody;
+    opacity: 1;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:$color;
+    font-size: $font-size;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:$color;
+    font-size: $font-size;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:$color;
+    font-size: $font-size;
+  }
+}

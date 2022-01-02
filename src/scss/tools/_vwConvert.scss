@@ -1,0 +1,10 @@
+// ========================================= //
+// vwConvert
+// ========================================= //
+
+$width-context: 1500; // Default
+
+// Convert px to vw
+@function vw($pixels, $context: $width-context) {
+    @return #{($pixels/1500)*100}vw
+}

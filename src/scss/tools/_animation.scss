@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+ @keyframes bgAnimateThrough {
+  0% {
+    transform: scale(1.2);
+    animation-timing-function: ease-in;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    animation-timing-function: ease-out;
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}

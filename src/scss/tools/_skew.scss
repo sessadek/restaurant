@@ -1,0 +1,15 @@
+@mixin skew($height, $deg, $bgc : false) {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: rem($height);
+	@if $bgc {
+    background-color: $bgc;
+	} @else {
+	    background-color: inherit;
+	}
+	transform: skewY(#{$deg}deg);
+	transform-origin: top left;
+}

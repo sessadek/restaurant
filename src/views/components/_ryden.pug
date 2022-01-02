@@ -1,0 +1,21 @@
+<!--  DEBUT AYDEN -->
+
+include ../blocks/_header
+include ../blocks/_ryden
+.container
+    +header('Plaisir RYDEN')
+    //- DEBUT AYDEN Chaud
+    h2.title-ryden Chaud
+    .row.justify-content-center
+        - var rydenChaud = [{'title': 'Paradisiaca', 'price': '28dh'}, {'title': 'Nuts caﬀee Milk', 'price': '24dh'}, {'title': 'Caramel latté Macchiato', 'price': '24dh'}]
+        each item in rydenChaud
+            +ryden(item.title, item.price)
+    //- FIN AYDEN Chaud
+
+    //- DEBUT AYDEN Froid
+    h2.title-ryden Froid
+    .row.justify-content-center
+        - var rydenFroid = [{'title': 'Frappuccino Caramel', 'price': '24dh'}, {'title': 'Frappuccino Mocha', 'price': '24dh'}, {'title': 'Spéculoos Coﬀé', 'price': '24dh'}]
+        each item in rydenFroid
+            +ryden(item.title, item.price)
+    //- FIN AYDEN Froid

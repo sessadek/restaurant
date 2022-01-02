@@ -1,0 +1,24 @@
+.sliderNumber-byOne--item {
+    position: relative;
+    font-size: 16px;
+    font-size: .8333333333333333vw;
+    @include media-breakpoint-down(sm) {
+        font-size: 1.333333333333333vw;
+    }
+    .h1 {
+        position: absolute;
+        bottom: 36%;
+        right: 9.42%;
+        color: $white;
+        font-weight: 700;
+        line-height: 1.08;
+        font-size: em(74);
+        @include media-breakpoint-down(sm) {
+            font-size: em(70);
+            bottom: 21.2%;
+        }
+    }    
+    img {
+        min-height: rem(250);
+    }
+}

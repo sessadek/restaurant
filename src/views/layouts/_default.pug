@@ -1,0 +1,28 @@
+block vars
+    - var imgDir = "medias/images/"
+    - var cssLocalDir = "assets/stylesheets/local/"
+    - var cssVendorDir = "assets/stylesheets/vendor/"
+    - var scriptsDir = "assets/scripts/"
+    - var scriptsVendorDir = "assets/scripts/vendor/"
+    - var faviconsDir = "medias/favicon/"
+    - var page = ''
+    - var pageClass = ''
+    - var indexMenu = null
+    - var footerLinksRightIndex = null
+doctype html
+html(lang="fr" xml:lang="fr")
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        title Restaurant
+        include ../assets/_metas
+        //- include ../assets/_fonts
+        include ../assets/_styles
+        include ../assets/_favicons
+        
+    body(class=pageClass)
+        main
+            block main
+        
+        block scripts
+            include ../assets/_scripts

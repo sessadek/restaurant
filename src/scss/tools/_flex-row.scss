@@ -1,0 +1,7 @@
+@mixin flex-row($max-width: 980) {
+	max-width: rem($max-width);
+	display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  margin-left: auto;
+}

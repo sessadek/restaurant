@@ -1,0 +1,111 @@
+.page-404 {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    @include media-breakpoint-up(sm) {
+        padding-top: 0;
+        header {
+            display: none;
+        }
+    }
+    main {
+        display: table-cell;
+        vertical-align: middle;
+        padding: rem(35) 0;
+    }
+    .display-4 {
+        text-align: center;
+        max-width: rem(680);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(65);
+        @include media-breakpoint-up(sm) {
+            br {
+                display: none;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(45);
+        }
+    }
+    .container,
+    .header-bottom {
+        @include media-breakpoint-down(sm) {
+            padding-left: rem(30);
+            padding-right: rem(30);
+        }
+    }
+}
+
+.logo-404 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(80);
+    @include media-breakpoint-down(sm) {
+        margin-bottom: rem(10);
+        max-width: rem(189);
+    }
+}
+
+.nav-404 {
+    display: block !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include media-breakpoint-down(sm) {
+        a {
+            padding: rem(12) rem(12);
+        }
+        ul {
+            flex-direction: column;
+            width: 100%;
+        }
+        li:not(:last-child)::before {
+            display: none;
+        }
+        li {
+            justify-content: center;
+            span {
+                font-size: rem(18);
+            }
+            &:nth-child(1) {
+                a {
+                    &:before {
+                        width: rem(46);
+                        height: rem(38);
+                        background-size: rem(46) rem(38);
+                    }
+                }
+            }
+            &:nth-child(2) {
+                a {
+                    &:before {
+                        width: rem(46);
+                        height: rem(33);
+                        background-size: rem(46) rem(33);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    &:before {
+                        width: rem(45);
+                        height: rem(39);
+                        background-size: rem(45) rem(39);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    &:before {
+                        width: rem(36);
+                        height: rem(33);
+                        background-size: rem(36) rem(33);
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,12 @@
+<!--  DEBUT Cocktail -->
+
+include ../blocks/_header
+include ../blocks/_cocktail
+.container
+    +header('Menu Cocktail')
+    .row.justify-content-center
+        - var items = [{'title': 'Detox Green', 'price': '26dh'}, {'title': 'Detox purple', 'price': '26dh'}, {'title': 'Jus de regime', 'price': '20dh'}, {'title': 'Detox carotte', 'price': '26dh'}, {'title': 'Sahara', 'price': '35dh'}]
+        each item in items
+            +cocktail(item.title, item.price)
+
+<!--  FIN Cocktail -->

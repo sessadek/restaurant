@@ -1,0 +1,49 @@
+.s-contact {
+    max-width: calc(10% + 45rem);
+    margin: rem(40) auto rem(65);
+    .display-4 {
+        margin-bottom: rem(20);
+    }
+    .p {
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+        background-color: $orange;
+        color: $white;
+        font-size: rem(18);
+        padding: rem(12) rem(10);
+        &::before {
+            background-color: $white;
+        }
+        &:hover {
+            color: $orange;
+            &::before {
+                background-color: $white;
+            }
+        }
+    }
+    
+}
+
+#contact-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(40);
+    margin-bottom: rem(20);
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+        top: 36%;
+    }
+}
+
+.custom-control-label::before {
+    width: rem(20);
+    height: rem(17);
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background: url(#{$image}checkbox.svg) no-repeat;
+    background-size: rem(20) rem(17);
+    // 
+    z-index: 1;
+}
