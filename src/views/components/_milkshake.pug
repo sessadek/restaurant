@@ -1,3 +1,4 @@
+- var pathImg = imgDir + 'jus/milkshake/'
 <!--  DEBUT MilkShake -->
 
 include ../blocks/_header
@@ -7,15 +8,15 @@ include ../blocks/_milkshake
     //- DEBUT MilkShake Classique
     h2.title-ryden Classique
     .row.justify-content-center
-        - var milkShakeClassique = [{'title': 'Oréo', 'price': '30dh'}, {'title': 'Chocolat', 'price': '30dh'}, {'title': 'Fraise', 'price': '30dh'}, {'title': 'Vanille', 'price': '30dh'}]
+        - var milkShakeClassique = [{'title': 'Oréo', 'price': '30dh', 'img': 'oreo.jpg'}, {'title': 'Chocolat', 'price': '30dh', 'img': 'Chocolat.jpg'}, {'title': 'Fraise', 'price': '30dh', 'img': 'Fraise.jpg'}, {'title': 'Vanille', 'price': '30dh', 'img': 'Vanille.jpg'}]
         each item in milkShakeClassique
-            +milkshake(item.title, item.price)
+            +milkshake(item.title, item.price, pathImg+item.img)
     //- FIN MilkShake Classique
 
     //- DEBUT MilkShake Tendance
     h2.title-ryden Froid
     .row.justify-content-center
-        - var milkShakeTendance = [{'title': 'Snickers', 'price': '24dh'}, {'title': 'Brownies', 'price': '24dh'}, {'title': 'Kit kat', 'price': '24dh'}]
+        - var milkShakeTendance = [{'title': 'Snickers', 'price': '24dh', 'img': 'Snickers.jpg'}, {'title': 'Brownies', 'price': '24dh', 'img': 'Brownies.jpg'}, {'title': 'Kit kat', 'price': '24dh', 'img': 'Kitkat.jpg'}]
         each item in milkShakeTendance
-            +milkshake(item.title, item.price)
+            +milkshake(item.title, item.price, pathImg+item.img)
     //- FIN MilkShake Tendance

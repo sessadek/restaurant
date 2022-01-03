@@ -1,3 +1,4 @@
+- var pathImg = imgDir + 'jus/mojito/'
 <!--  DEBUT Mojito -->
 
 include ../blocks/_header
@@ -5,8 +6,8 @@ include ../blocks/_mojito
 .container
     +header('Menu Mojito')
     .row.justify-content-center
-        - var items = [{'title': 'Bubble Mango Mojito', 'price': '26dh'}, {'title': 'Virgin Classique', 'price': '26dh'}, {'title': 'Bubble Strawberry Mojito', 'price': '30dh'}, {'title': 'Bubble Gum Mojito', 'price': '30dh'}, {'title': 'Bubble Passion Mojito', 'price': '35dh'}]
+        - var items = [{'title': 'Bubble Mango Mojito', 'price': '26dh', 'img': 'Bubble-Mango-Mojito.jpg'}, {'title': 'Virgin Classique', 'price': '26dh', 'img': 'Virgin-Classique.jpg'}, {'title': 'Bubble Strawberry Mojito', 'price': '30dh','img': 'Bubble-Strawberry-Mojito.jpg'}, {'title': 'Bubble Gum Mojito', 'price': '30dh', 'img': 'Bubble-Gum-Mojito.jpg'}, {'title': 'Bubble Passion Mojito', 'price': '35dh', 'img': 'Bubble-Passion-Mojito.jpg'}]
         each item in items
-            +mojito(item.title, item.price)
+            +mojito(item.title, item.price, pathImg+item.img)
 
 <!--  FIN Mojito -->

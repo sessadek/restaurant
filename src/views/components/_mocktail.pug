@@ -1,3 +1,4 @@
+- var pathImg = imgDir + 'jus/mocktail/'
 <!--  DEBUT Menu Mocktail -->
 
 include ../blocks/_header
@@ -5,8 +6,8 @@ include ../blocks/_mocktail
 .container
     +header('Menu Mocktail')
     .row.justify-content-center
-        - var items = [{'title': 'Bora Bora', 'price': '26dh'}, {'title': 'Virgin Pinacolada', 'price': '28dh'}, {'title': 'Blue Hawaïenne', 'price': '30dh'}, {'title': 'Copacabana', 'price': '30dh'}]
+        - var items = [{'title': 'Bora Bora', 'price': '26dh', 'img': 'Bora-Bora.jpg'}, {'title': 'Virgin Pinacolada', 'price': '28dh', 'img': 'Virgin-Pinacolada.jpg'}, {'title': 'Blue Hawaïenne', 'price': '30dh', 'img': 'Blue-Hawaienne.jpg'}, {'title': 'Copacabana', 'price': '30dh', 'img': 'Copacabana.jpg'}]
         each item in items
-            +mocktail(item.title, item.price)
+            +mocktail(item.title, item.price, pathImg+item.img)
             
 <!--  FIN Menu Mocktail -->
