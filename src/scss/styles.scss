@@ -51,6 +51,15 @@ img {
   }
 
 
+  .header-title-dejeuner {
+    text-align: center;
+    font-size: 43px;
+    line-height: 52px;
+    color: #1D1D1B;
+    font-family: 'Kristen ITC', sans-serif;
+  }
+
+
   /*****Grid***/
 
 
@@ -72,24 +81,13 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
 
-  .col-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex: 0 0 ($i/12)*100%;
+      max-width: ($i/12)*100%;
+    }
   }
-  .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .col-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-
 
   .justify-content-center {
     justify-content: center;
@@ -149,11 +147,6 @@ img {
 }
 .menu-block-top .menu-item{
   margin: 0 20px;
-}
-
-.menu-block-middle .menu-item,
-.menu-block-bottom .menu-item {
-	margin-top: -75px;
 }
 
 .logo {
@@ -262,4 +255,47 @@ img {
 
 .colo-gray-dark {
   color: #3C3C3B !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-content-between {
+  align-content: space-between;
+}
+
+
+.block-dejeuner {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    border-radius: 25px;
+  }
+  h2 {
+    margin-top: 5px;
+    font-size: 23px;
+    line-height: 27px;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Arial Rounded MT', sans-serif;
+  }
+  h3 {
+    font-family: 'Poppins Thin', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 0;
+  }
 }

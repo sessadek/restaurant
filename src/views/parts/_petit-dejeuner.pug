@@ -1,0 +1,31 @@
+section(id="petit-dejeuner" class="section-item")
+    .container
+        .header
+            .row
+                .col-2: .logo
+                .col-10: h1.header-title-dejeuner Petit Déjeuner
+        .row
+            - var items = [{'title': 'Américain', 'price': '48dh', 'description': '“ Œufs plat ou brouillé, sauciss grillé, tranche d’avocat, pain gratiné ”'}, {'title': 'Chamali', 'price': '48dh', 'description': '“ Œufs plat ou brouillé, jben au thym, salami,  jambon de dinde, tranche fromage gruyère, tortilla, huile d’olive, olive noir ”'}, {'title': 'Berbèr', 'price': '35dh', 'description': '“Harcha, msemen, baghrir, amlou, miel, beurre, confiture, olive noir ”'}, {'title': 'Plaisir du Matin', 'price': '35dh', 'description': '“ Corbeille de mini-viennoiserie, baguette grillé, eurre, miel, confiture, huile d’olive  ”'}, {'title': 'Marocain', 'price': '38dh', 'description': '“ Khlie, œufs, huile d’olive, olive noir”'}, {'title': 'Tostade', 'price': '38dh', 'description': ' Pain de mie grillé, jambon de dinde, fromage rapé, œufs, huile d’olive, olive noir”'}, {'title': 'Brunch Gourmet', 'price': '90dh', 'description': '“boissons chaudes, jus, fromagr frais, oeufs au plat, salade de fruit, mini baghrir vinnoiseries, tranches d’avocatn, charcutrie, fromage gruyèr, pain perdu, jben, beurre, miel ”'}, {'title': 'Tuscan', 'price': '38dh', 'description': '“ 2 tranches de baguette, tomate concassé au thym  charcutrie, fromage fondue, œufs brouillé olive noir, huile d’olive ”'}]
+            each item in items
+                .col-6.d-flex
+                    .block-dejeuner.d-flex.flex-wrap.justify-content-center
+                        img(src="https://via.placeholder.com/268x360", alt="")
+                        .block-dejeuner-body.align-content-between.d-flex.flex-wrap.justify-content-center
+                            h2= item.title
+                            p= item.description
+                        h3= item.price
+    .container
+        .header
+            .row
+                .col-2: .logo
+                .col-10: h1.header-title-dejeuner Quoi de N'Oeuf
+        .row
+            - var items = [{'title': 'Omelette spinach mushroom', 'price': '34dh', 'description': '“ oeufs, epinard, champignon, fromage ”'}, {'title': 'Omelette Fajitas', 'price': '34dh', 'description': '“ oeufs, poivron 3 couleur, fromage”'}, {'title': 'Omelette Suisse', 'price': '34dh', 'description': '“ Omelette, charcutrie, champignon, fromage”'}, {'title': 'Omelette Classique', 'price': '32dh', 'description': '“ œufs nature, beurre, crème fraiche”'}]
+            each item in items
+                .col-6.d-flex
+                    .block-dejeuner.d-flex.flex-wrap.justify-content-center
+                        img(src="https://via.placeholder.com/268x360", alt="")
+                        .block-dejeuner-body.align-content-between.d-flex.flex-wrap.justify-content-center
+                            h2= item.title
+                            p= item.description
+                        h3= item.price

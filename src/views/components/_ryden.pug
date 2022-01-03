@@ -1,3 +1,4 @@
+- var pathImg = imgDir + 'jus/plaisir-ayden/chaud/'
 <!--  DEBUT AYDEN -->
 
 include ../blocks/_header
@@ -7,9 +8,9 @@ include ../blocks/_ryden
     //- DEBUT AYDEN Chaud
     h2.title-ryden Chaud
     .row.justify-content-center
-        - var rydenChaud = [{'title': 'Paradisiaca', 'price': '28dh'}, {'title': 'Nuts caﬀee Milk', 'price': '24dh'}, {'title': 'Caramel latté Macchiato', 'price': '24dh'}]
+        - var rydenChaud = [{'title': 'Paradisiaca', 'price': '28dh', 'img': 'Paradisiaca.jpg'}, {'title': 'Nuts caﬀee Milk', 'price': '24dh', 'img': 'Nuts-caffee-Milk.jpg'}, {'title': 'Caramel latté Macchiato', 'price': '24dh', 'img': 'Caramel-latte-Macchiato.jpg'}]
         each item in rydenChaud
-            +ryden(item.title, item.price)
+            +ryden(item.title, item.price, pathImg+item.img)
     //- FIN AYDEN Chaud
 
     //- DEBUT AYDEN Froid

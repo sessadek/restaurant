@@ -1,12 +1,14 @@
+- var pathImg = imgDir + 'jus/jus-naturels/'
 <!--  DEBUT Jus Naturels -->
 
 include ../blocks/_header
 include ../blocks/_jus-naturel
 .container
+    
     +header('Nos Jus Naturels')
     .row
-        - var items = [{'title': 'Jus de Kiwi', 'price': '22dh'}, {'title': 'Jus de Mangue', 'price': '22dh'}, {'title': 'Jus de Kaki', 'price': '20dh'}, {'title': 'Jus d’Ananas', 'price': '22dh'}, {'title': 'Jus de Betrave', 'price': '18dh'}, {'title': 'Jus de Carotte', 'price': '18dh'}, {'title': 'Jus de Citron', 'price': '17dh'}, {'title': 'Jus d’Orange', 'price': '17dh'}, {'title': 'Jus de Banane', 'price': '18dh'}, {'title': 'Jus de Pomme', 'price': '18dh'}, {'title': 'Jus de Poire', 'price': '18dh'}, {'title': 'Jus d’Avocat', 'price': '20dh'}, {'title': 'Jus de Pêche', 'price': '18dh'}, {'title': 'Jus de Dragon', 'price': '30dh'}, {'title': 'Jus de Citron gingembre', 'price': '20dh'}, {'title': 'Jus de Fraise', 'price': '20dh'}]
+        - var items = [{'title': 'Jus de Kiwi', 'price': '22dh', 'img': 'kiwi.jpg'}, {'title': 'Jus de Mangue', 'price': '22dh', 'img': 'mangue.jpg'}, {'title': 'Jus de Kaki', 'price': '20dh', 'img': 'kaki.jpg'}, {'title': 'Jus d’Ananas', 'price': '22dh', 'img': 'ananas.jpg'}, {'title': 'Jus de Betrave', 'price': '18dh', 'img': 'bettrave.jpg'}, {'title': 'Jus de Carotte', 'price': '18dh', 'img': 'carotte.jpg'}, {'title': 'Jus de Citron', 'price': '17dh', 'img': 'citron.jpg'}, {'title': 'Jus d’Orange', 'price': '17dh', 'img': 'orange.jpg'}, {'title': 'Jus de Banane', 'price': '18dh', 'img': 'banane.jpg'}, {'title': 'Jus de Pomme', 'price': '18dh', 'img': 'pomme.jpg'}, {'title': 'Jus de Poire', 'price': '18dh', 'img': 'poire.jpg'}, {'title': 'Jus d’Avocat', 'price': '20dh', 'img': 'avocat.jpg'}, {'title': 'Jus de Pêche', 'price': '18dh', 'img': 'peche.jpg'}, {'title': 'Jus de Dragon', 'price': '30dh', 'img': 'dragon.jpg'}, {'title': 'Jus de Citron gingembre', 'price': '20dh', 'img': 'citron-gingembre.jpg'}, {'title': 'Jus de Fraise', 'price': '20dh', 'img': 'fraise.jpg'}]
         each item in items
-            +jusNaturel(item.title, item.price)
+            +jusNaturel(item.title, item.price, pathImg+item.img)
 
 <!--  FIN Jus Naturels -->

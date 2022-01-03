@@ -62,6 +62,54 @@
 }
 
 
+@font-face {
+  font-family: 'Kristen ITC';
+  src: url('#{$fonts}KristenITC-Regular.eot');
+  src: url('#{$fonts}KristenITC-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts}KristenITC-Regular.woff2') format('woff2'),
+      url('#{$fonts}KristenITC-Regular.woff') format('woff'),
+      url('#{$fonts}KristenITC-Regular.ttf') format('truetype'),
+      url('#{$fonts}KristenITC-Regular.svg#KristenITC-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Berlin Sans FB Demi';
+  src: url('#{$fonts}BerlinSansFBDemi-Bold.eot');
+  src: url('#{$fonts}BerlinSansFBDemi-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts}BerlinSansFBDemi-Bold.woff2') format('woff2'),
+      url('#{$fonts}BerlinSansFBDemi-Bold.woff') format('woff'),
+      url('#{$fonts}BerlinSansFBDemi-Bold.ttf') format('truetype'),
+      url('#{$fonts}BerlinSansFBDemi-Bold.svg#BerlinSansFBDemi-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Arial Rounded MT';
+  src: url('#{$fonts}ArialRoundedMTBold.eot');
+  src: url('#{$fonts}ArialRoundedMTBold.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts}ArialRoundedMTBold.woff2') format('woff2'),
+      url('#{$fonts}ArialRoundedMTBold.woff') format('woff'),
+      url('#{$fonts}ArialRoundedMTBold.ttf') format('truetype'),
+      url('#{$fonts}ArialRoundedMTBold.svg#ArialRoundedMTBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
 /* @font-face {
   font-family: 'Gabriola';
   src: url('#{$fonts}Gabriola.eot');
